@@ -93,6 +93,7 @@ button:focus {
 
 a:hover {
     color: var(--elements-color);
+    text-decoration: underline;
 }
 
 a:focus {
@@ -119,6 +120,27 @@ a:focus {
     margin-left: auto;
     gap: 50px;
 }
+
+.letter-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.phone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.contact-mp:hover .letter-icon {
+    fill: var(--elements-color);
+}
+
+.contact-mp:hover .phone-icon {
+    fill: var(--elements-color);
+}
+
 
 /** footer - main page **/ 
 
@@ -147,19 +169,19 @@ a:focus {
 
 .first-class {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/main-theme.jpg');
-    background-size: auto;
+    background-size: cover;
     padding: 200px 0;
-    width: 1600px;
-    max-height: 600px;
+    max-width: 1600px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
+
 }
 
-.lorem-items {
+
+.lorem-images {
     display: flex;
-    width: 270px;
-    height: 120px;
-    padding: 25px 102.34px;
     background-color: var(--buttons-ppage-bg-color);
     margin-bottom: 20px;
 }
@@ -302,7 +324,9 @@ a:focus {
 
 .lorem-text {
         display: flex;
-        justify-content: space-around;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
 }
 
 .lorem-text h2 {
@@ -320,8 +344,7 @@ a:focus {
     line-height: 1.71;
     color: var(--light-text-color);
     letter-spacing: 0.03em;
-    display: flex;
-    padding: 10px 0 0 0;
+    margin-top: 10px;
 }
 
 .photos-section h2 {
@@ -348,17 +371,15 @@ a:focus {
 
 .our-team {
     background-color: var(--team-section);
-    display: flex;
 }
 
 .team-img {
     display: flex;
     gap: 30px;
-    margin: 0 auto;
-    padding: 50px 0 0 0;
+    margin-top: 50px;
 }
 
-.team-img li {
+.team-img .team-box {
     background: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -367,18 +388,31 @@ a:focus {
 .social-icons {
     display: flex;
     gap: 10px;
+    justify-content: center;
+    
+}
+
+.social-icons li {
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
     align-items: center;
-    justify-content: space-around;
-    margin: 16px 32px 30px;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
     fill: var(--icon-color);
 }
 
-.social-icons use:hover {
+.social-icons:hover li {
+    box-sizing: border-box;
     width: 44px;
     height: 44px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     border-radius: 50%;
-    background: var(--elements-color);
-    fill: var(--footer-adress-color);
+    fill: var(--white-letters);
+    background-color: var(--elements-color);
 }
 
 .social-icons-footer {
@@ -435,8 +469,8 @@ border: 1px solid var(--border-icon-clients);
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    padding: 30px 0 0 0;
     text-align: center;
+    margin-top: 30px;
 }
 
 .our-team p {
@@ -446,8 +480,8 @@ border: 1px solid var(--border-icon-clients);
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--light-text-color);
-    padding: 10px 0 30px 0;
     text-align: center;
+    margin: 10px 0 16px;
 }
 
 .bottom-foot {
