@@ -403,7 +403,7 @@ a:focus {
     fill: var(--icon-color);
 }
 
-.social-icons:hover li {
+.social-icons li:hover {
     box-sizing: border-box;
     width: 44px;
     height: 44px;
