@@ -133,13 +133,10 @@ a:focus {
     margin-right: 10px;
 }
 
-.contact-mp:hover .letter-icon {
+.contact-mp li:hover {
     fill: var(--elements-color);
 }
 
-.contact-mp:hover .phone-icon {
-    fill: var(--elements-color);
-}
 
 
 /** footer - main page **/ 
