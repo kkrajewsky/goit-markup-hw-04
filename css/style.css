@@ -628,7 +628,7 @@ button:focus {
     display: flex;
     gap: 8px;
     justify-content: center;
-    padding: 100px 0 56px;
+    padding: 94px 0 50px;
 }
 
 
@@ -829,7 +829,7 @@ button:focus {
 /** koniec header /\ **/
 
 .photos-box {
-    padding:0 0 94px;
+    margin-bottom: 94px;
 }
 
 .photos h3 {
@@ -868,9 +868,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 .photos {
     display: flex;
     flex-flow: wrap;
-    gap: 30px;
-    align-content: space-around;
+    gap: 26px;
     justify-content: space-between;
+    
 }
 
 .photos h3 {
